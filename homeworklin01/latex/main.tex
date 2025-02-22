@@ -1,0 +1,239 @@
+\input{preamble}
+
+\usepackage{listings}
+\usepackage{amsmath,amssymb,caption}
+%% my poor man's solution to arc notation
+\newcommand{\tarc}{\mbox{\large$\frown$}}
+\newcommand{\arc}[1]{\stackrel{\tarc}{#1}}
+
+\lstset{frame=tb,
+  language=Matlab,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+% Remove page number
+\clearpage
+\thispagestyle{empty}
+
+\begin{bfseries}
+\begin{center}
+
+\includegraphics{ufc.png} \\
+\vspace{-4pt} 
+UNIVERSIDADE FEDERAL DO CEARÁ \\
+\vspace{4pt} 
+CENTRO DE TECNOLOGIA \\
+\vspace{4pt} 
+DEPARTAMENTO DE ENGENHARIA DE TELEINFORMÁTICA \\
+\vspace{4pt}
+SINAIS E SISTEMAS \\
+\vspace{4pt}
+SEMESTRE 2023.2 \\
+
+
+\vspace*{\fill}
+\textbf{Lista de Exercícios Módulo 01 (parte 2)}
+\vspace*{\fill}
+
+\end{center}
+
+\begin{itemize}[leftmargin=*]
+    \setlength{\itemsep}{0pt}
+    \item[] ALUNO: Ruan Pereira Alves
+    \item[] MATRÍCULA: 510626
+    \item[] PROFESSOR: IGOR MOACO GUERREIRO
+    \item[] DISCIPLINA: SINAIS E SISTEMAS
+    \item[] DATA DE ENTREGA DO RELATÓRIO: 02/10/2023
+\end{itemize}
+
+\end{bfseries}
+
+\newpage
+
+\section{QUESTIONÁRIO}
+
+\textbf{Questão 01} 
+
+a) $\alpha \neq \beta$: \\
+
+Temos que 
+\begin{equation}
+        y[n] = \sum ^{+\infty} _{k = -\infty} x[k]h[n - k] 
+\end{equation}
+Como $u[k]$ representa o degrau unitário, e temos que:
+
+\begin{equation}
+    \begin{cases}
+     u[n] = 0, n < 0 \\
+     u[n] = 1, n \geq 0 
+    \end{cases} 
+\end{equation}
+
+ficamos no fim com
+
+\begin{equation}\label{eq:ref1}
+    y[n] = \sum ^{+\infty} _{k = 0} \alpha^k \beta^{n-k}.
+\end{equation}
+
+Isolando as variáveis dependentes de $k$ na expressão, desta forma, 
+$\beta^n$ será constante dentro do somatório, podemos retirar esta parcela do 
+somatório, portanto, obtemos:
+
+\begin{equation}
+    y[n] = \beta^n \sum _{k = 0} ^{n} (\alpha/\beta)^k,
+\end{equation}
+
+Mas temos que 
+
+\begin{equation}
+    \sum ^{n} _{k=0} \alpha ^k = \frac{1 - \alpha^{n-1}}{1 - \alpha}
+\end{equation}
+
+Substituindo $\alpha^k$ por $(\alpha/\beta)^k$, teremos no final:
+
+\begin{equation}
+    y[n] = \left( \frac{\beta^{n+1} - \alpha^{n+1}}{\beta - \alpha} \right)u[n].
+\end{equation}
+
+b) $\alpha = \beta$:\\
+
+A partir do item anterior, com o mesmo desenvolvimento até a equação 
+\ref{eq:ref1}. Utilizando que $\alpha = \beta$, temos:
+
+\begin{equation}
+    y[n] = \sum_{k = 0} ^n \alpha ^n u[k] 
+\end{equation}
+
+Assim:
+
+\begin{equation}
+    y[n] = (n + 1)\alpha^n u[n].
+\end{equation}
+
+\textbf{Questão 02}
+
+Temos que a convolução é:
+
+\begin{equation}
+    y[n] = \sum ^{+\infty} _{k = -\infty} x[k]h[n - k]
+\end{equation}
+
+Assim, aplicando em $x(t)$ e $h(t)$, temos:
+\begin{equation}
+    y(t) = \int _{-\infty} ^{\infty} u(\tau) - 2u(\tau - 3) + u(\tau - 6) e^{(2(t - \tau))}u(1- (t - \tau)) d\tau,
+\end{equation}
+
+Mas
+
+\begin{equation}
+    e^{(2(t - \tau))}u(1 - (t - \tau)) = \begin{cases}
+        e^{(2(t- \tau))}, \text{se } \tau > t-1 , \\
+        0 \;, \text{caso contrário.}
+    \end{cases}
+\end{equation}
+Dividiremos nossa expressão para $y(t)$ em uma soma de integrais:
+
+\begin{equation}
+    y(t) = \int _{0} ^3 e^{(2(t - \tau))} d\tau - \int_{3} ^6 e^{(2(t - \tau))}d\tau,
+\end{equation}
+
+desta forma
+
+\begin{equation}
+    y(t) = \left[ -1/2 (e^{2t} - e^{2\tau})\right]|_{\tau = 0} ^3 - \left[ -1/2 (e^{2t} - e^{2\tau})\right]|_{\tau = 3} ^6, 
+\end{equation}
+
+Portanto,
+
+\begin{equation}
+    y(t) = \frac{1}{2}(-2 e^{2(t-3)} + e^{2t} + e^{2(t-6)}),
+\end{equation}
+
+
+
+\newpage
+
+\textbf{Questão 03} 
+
+Com o auxílio de ferramentas de IA (Inteligência Artificial), criamos um questionário de 20 perguntas que buscam reunir:
+
+\begin{itemize}
+    \item Dados de idade, engenharia cursada e semestre
+    \item Conhecimento acerca do funcionamento básico do CREA
+    \item Entender qual é o nível de divulgamento do CREA dentro do DETI
+    \item Saber qual a opinião dos alunos acerca das funções do CREA e do divulgamento no departamento
+\end{itemize}
+
+Essas informações são importantes e foram escolhidas para serem coletadas pela pesquisa pois nos ajudam a determinar qual é o contingente que pessoas que estamos entrevistando, se é divulgado o CREA pelo DETI-UFC, se há algum nível de difusão de informação, e por fim, se os alunos estão interessados no CREA.
+
+
+\newpage
+
+\textbf{Questão 04} 
+
+A partir de
+
+\begin{equation}
+    y(t) = \int_\infty ^t \exp{(-(t-\tau))} \;x(\tau - 2)d\tau
+\end{equation}
+
+a) 
+
+Analisando os limites de integração e a equação, podemos reescrever:
+
+\begin{equation}
+    h(t) = \exp{(-(t-2))}u(t-2)
+\end{equation}
+
+Para a integração entre $-\infty$ a $t$, precisamos  que a parte exponencial de $h(t)$ seja multiplicada por um degrau unitário, que esteja no 
+mesmo domínio de tempo que o sinal $x(t)$ está.\\
+
+
+
+\newpage
+\textbf{Questão 05}
+
+Temos que 
+
+\begin{equation}
+    \frac{dx(t)}{dt} = -6e^ {-3t}u(t-1) + 2\delta(t-1)
+\end{equation}
+
+
+simplificando, teremos
+$-3x(t) + 2\delta(t-1)$.\\
+
+Desenvolvendo:
+\begin{equation}
+    -3y(t) + e^{-2t}u(t) = (-3x(t) + 2\delta(t-1))*h(t) \therefore \\ 2h(t-1) = e^{-2t}u(t)
+\end{equation}
+
+
+
+que será o resultado. 
+
+Reorganizando a equação acima, temos:
+
+\begin{equation}
+    h(t) = \frac{1}{2}e^{-2(t+1)}u(t+1).
+\end{equation}
+
+\newpage
+\textbf{Questão 06}
+
+
+\end{document}
