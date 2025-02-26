@@ -27,6 +27,14 @@ int main () {
     uword r = arma::rank(A);
     cout << "Resultado das dimensões do subespaço: " << r << endl;
 
+    //a base do subespaço é dado por um conjunto de vetores coluna que podem criar a matriz original a partir de 
+    //uma operação matricial, e que não pode ser simplificado. 
+    //ou seja, para a matriz A, podemos remontar tal matriz a partir de:
+    mat base = {{1,0,0}, {0,1,0},{0,0,1}};
+    vector<double> arb = {2,2,1};
+    //podemos definir um vetor arbitrário como sendo por exemplo (2, 2, 1).
+    //realizando a operação Ax = B usando a base encontrada anteriormente, podemos notar que o vetor resultante será sim do mesmo
+    //as coordenadas seriam os vetores unitários dado pelo vetor arbitrário.
     // leitura do espaço linha, coluna, e nulo
     return 0;
 }
