@@ -88,7 +88,113 @@ Assim, foi possível realizar o desenvolvimento da atividade, vide o código a s
 
 \section{Homework 02 linear}
 
+Para o item 2, precisamos primeiro entender o que seria um problema de Least Squares, que é basicamente uma combinação linear dos parâmetros da equação, que quando derivados, devem assumir formato: 
+
+$x = (A^T A)^{-1} A^T y$
+
+Com isso, temos que:
+
+$$
+x_{\text{opt}} = \arg \min_{x} \| y - Ax \|_2^2
+$$
+
+Primeiro, definimos a função de custo $J(x)$ e a reescrevemos usando a propriedade de que a norma ao quadrado de um vetor $v$ é igual ao produto escalar $v^T v$.
+
+\begin{align*}
+	J(x) &= \| y - Ax \|_2^2 \\
+	&= (y - Ax)^T (y - Ax)
+\end{align*}
+
+Usando a propriedade da transposta de um produto, $(AB)^T = B^T A^T$, expandimos a expressão:
+
+\begin{align*}
+	J(x) &= (y^T - (Ax)^T) (y - Ax) \\
+	&= (y^T - x^T A^T) (y - Ax)
+\end{align*}
+
+Agora, distribuímos os termos (multiplicação de matrizes):
+
+\begin{align*}
+	J(x) &= y^T y - y^T(Ax) - (x^T A^T)y + (x^T A^T)(Ax) \\
+	&= y^T y - y^T Ax - x^T A^T y + x^T A^T Ax
+\end{align*}
+
+Note que os termos $y^T Ax$ e $x^T A^T y$ são escalares (matrizes $1 \times 1$). Um escalar é igual à sua própria transposta, portanto $(y^T Ax)^T = x^T A^T y$. Isso significa que os dois termos do meio são idênticos. Podemos combiná-los:
+$$
+J(x) = y^T y - 2x^T A^T y + x^T A^T Ax
+$$
+
+O próximo passo é calcular o gradiente de $J(x)$ em relação ao vetor $x$, denotado por $\nabla_x J(x)$. Para isso, usamos as seguintes identidades do cálculo matricial:
+\begin{enumerate}
+	\item $\nabla_x (c) = 0$ (o gradiente de uma constante é o vetor nulo).
+	\item $\nabla_x (x^T b) = b$ (para um vetor $b$ constante).
+	\item $\nabla_x (x^T B x) = 2Bx$ (para uma matriz $B$ simétrica). A matriz $A^T A$ é sempre simétrica.
+\end{enumerate}
+
+Aplicando essas regras à nossa função de custo:
+
+\begin{align*}
+	\nabla_x J(x) &= \nabla_x (y^T y - 2x^T A^T y + x^T (A^T A) x) \\
+	&= \nabla_x(y^T y) - \nabla_x(2x^T A^T y) + \nabla_x(x^T (A^T A) x) \\
+	&= 0 - 2A^T y + 2(A^T A)x
+\end{align*}
+]
+O gradiente de $J(x)$ é, portanto:
+$$
+\nabla_x J(x) = 2(A^T Ax - A^T y)
+$$
+
+No ponto de mínimo (ou máximo, ou sela), o gradiente da função deve ser o vetor nulo. Como a função de custo é convexa, este ponto será um mínimo global.
+\begin{align*}
+	& \nabla_x J(x) = 0 \\
+	& 2(A^T Ax - A^T y) = 0 \\
+	& A^T Ax - A^T y = 0
+\end{align*}
+
+Isso nos leva às \textbf{equações normais}:
+$$
+A^T Ax = A^T y
+$$
+
+O passo final é isolar o vetor $x$. Assumindo que a matriz $A^T A$ é invertível (o que ocorre se as colunas da matriz $A$ forem linearmente independentes), podemos pré-multiplicar ambos os lados pela inversa $(A^T A)^{-1}$:
+
+\begin{align*}
+	& (A^T A)^{-1} (A^T Ax) = (A^T A)^{-1} (A^T y) \\
+	& I x = (A^T A)^{-1} (A^T y) \\
+	& x = (A^T A)^{-1} A^T y
+\end{align*}
+
+onde $I$ é a matriz identidade.
+
+A solução $x_{\text{opt}}$ que minimiza a soma dos quadrados dos erros é dada pela fórmula das equações normais:
+
+$$
+x_{\text{opt}} = (A^T A)^{-1} A^T y.
+$$
+
 \section{Homework 03 linear}
+
+A Decomposição de Valores Singulares (DVS) é uma técnica fundamental de fatoração de matrizes que decompõe qualquer matriz em três componentes: um conjunto de vetores singulares à esquerda, uma matriz diagonal de valores singulares e um conjunto de vetores singulares à direita. Essa decomposição é particularmente poderosa para o processamento de imagens, pois ordena naturalmente os valores singulares do maior para o menor, onde os maiores valores singulares contêm as informações mais significativas sobre a imagem.
+
+Quando aplicada à reconstrução de imagens, a DVS nos permite aproximar a matriz da imagem original, mantendo apenas os valores singulares mais significativos e descartando os menores. Esse processo é conhecido como DVS truncada. A ideia principal é que a energia da imagem (medida pela soma dos valores singulares ao quadrado) se concentra nos primeiros valores singulares. Ao selecionar uma classificação de truncamento apropriada (J), podemos reconstruir a imagem com perda mínima de qualidade, reduzindo significativamente a quantidade de dados necessária para representá-la.
+
+Para implementar isso, primeiro carregamos a imagem e a convertemos em uma matriz de valores de pixel. Em seguida, calculamos a SVD dessa matriz, que nos fornece os valores singulares e seus vetores singulares correspondentes. Os valores singulares são analisados para determinar quanta energia cada um contribui para a energia total da imagem. Normalmente, escolhemos uma classificação de truncamento _(J_) tal que a energia cumulativa dos primeiros _(J_) valores singulares exceda um certo limite, como 95% da energia total. A imagem reconstruída é então formada pela multiplicação dos primeiros _(J_) vetores singulares à esquerda, dos primeiros _(J_) valores singulares e dos primeiros _(J_) vetores singulares à direita.
+
+Na presença de ruído, a SVD também atua como uma ferramenta de redução de ruído. Quando o ruído é adicionado à imagem, ele tende a afetar os valores singulares menores de forma mais significativa. Ao truncar a SVD, filtramos efetivamente o ruído, visto que o ruído é frequentemente associado aos valores singulares menores. O desempenho dessa redução de ruído depende da relação sinal-ruído (SNR). Valores de SNR mais altos resultam em melhor qualidade de reconstrução, pois o ruído é menos dominante. Por outro lado, em valores de SNR mais baixos, o ruído pode obscurecer os valores singulares menores, dificultando a separação do sinal do ruído.
+
+### Problema 2: Estimativa de Posto para Decomposição Tensor
+
+Em muitas aplicações de processamento de sinais, especialmente aquelas que envolvem dados multidimensionais, tensores são usados para representar os dados. Um problema comum é estimar o posto de um tensor, que é o menor número de componentes necessários para representá-lo com precisão. O algoritmo de Mínimos Quadrados Alternados (ALS) é um método popular para decompor tensores em suas partes constituintes, mas seu desempenho depende fortemente da estimativa correta do posto do tensor.
+
+O algoritmo ALS funciona otimizando iterativamente cada componente da decomposição tensorial, mantendo os outros componentes fixos. O algoritmo requer uma estimativa inicial para o posto do tensor e, se essa estimativa estiver incorreta, a qualidade da decomposição pode ser significativamente prejudicada.
+
+Para estudar o impacto da estimativa de posto no algoritmo ALS, realizamos experimentos de Monte Carlo. Em cada experimento, geramos um tensor com ruído e aplicamos o algoritmo ALS com diferentes classificações estimadas. Em seguida, medimos o erro de reconstrução, que quantifica o quão bem o tensor decomposto corresponde ao tensor original sem ruído. Repetindo esse processo várias vezes, podemos observar o desempenho médio do algoritmo ALS para cada classificação estimada.
+
+Quando a classificação estimada é muito baixa (subestimação), o algoritmo ALS não consegue capturar todos os componentes importantes do tensor, levando a um alto erro de reconstrução. Isso ocorre porque o modelo é muito simples para representar a estrutura de dados subjacente. Por outro lado, quando a classificação estimada é muito alta (superestimação), o algoritmo ALS pode capturar ruído como se fosse parte do sinal, levando ao sobreajuste. Isso também resulta em um erro de reconstrução maior, embora o aumento geralmente seja menos severo do que com a subestimação.
+
+O desempenho ideal é alcançado quando a classificação estimada corresponde à classificação real do tensor. Nesse ponto, o algoritmo ALS consegue representar o tensor com precisão, sem sobreajuste ou subajuste. A classificação verdadeira pode frequentemente ser identificada observando-se o ponto em que o erro de reconstrução para de diminuir significativamente à medida que a classificação estimada aumenta.
+
+Em aplicações práticas, é crucial validar a classificação escolhida usando técnicas como validação cruzada ou análise de consistência central. Esses métodos ajudam a garantir que a classificação estimada não seja excessivamente influenciada por ruído ou outros artefatos nos dados.
 
 \section{Homework 09 multilinear}
 
