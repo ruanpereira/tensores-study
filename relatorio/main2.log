@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.12)  10 AUG 2025 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.12)  11 AUG 2025 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**main2.tex
+(./main2.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (./preamble.tex (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -293,11 +293,15 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 )
-(./main.aux
+(./main2.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
 (babel)             Reported  on input line 5.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
 )
-\openout1 = `main.aux'.
+\openout1 = `main2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -389,252 +393,83 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/
 texmf-dist/fonts/enc/dvips/base/8r.enc} <./images/ufc.png>]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 41.
+ 42.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 41.
+ 42.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 41.
+ 42.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 41.
+ 42.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
-
-
-[2]
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 6
-3.
- (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
-
-
-[3]
-
-[4]
-Overfull \hbox (34.36087pt too wide) in paragraph at lines 174--175
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (48.76102pt too wide) in paragraph at lines 175--176
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[5]
-Overfull \hbox (257.56314pt too wide) in paragraph at lines 180--182
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
-
- []
-
-
-Overfull \hbox (106.3616pt too wide) in paragraph at lines 185--186
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (19.96072pt too wide) in paragraph at lines 188--190
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (70.36124pt too wide) in paragraph at lines 191--192
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[6]
-<images/recon_J.pdf, id=31, 4351.25626pt x 3001.2125pt>
-File: images/recon_J.pdf Graphic file (type pdf)
-<use images/recon_J.pdf>
-Package pdftex.def Info: images/recon_J.pdf  used on input line 214.
-(pdftex.def)             Requested size: 318.66948pt x 219.76903pt.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+<./images/itema.pdf, id=10, 722.6744pt x 433.03671pt>
+File: ./images/itema.pdf Graphic file (type pdf)
+<use ./images/itema.pdf>
+Package pdftex.def Info: ./images/itema.pdf  used on input line 50.
+(pdftex.def)             Requested size: 409.71692pt x 245.51196pt.
+<./images/itemb.pdf, id=11, 722.6744pt x 433.03671pt>
+File: ./images/itemb.pdf Graphic file (type pdf)
+<use ./images/itemb.pdf>
+Package pdftex.def Info: ./images/itemb.pdf  used on input line 59.
+(pdftex.def)             Requested size: 409.71692pt x 245.51196pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/sing_value_to_energy.pdf, id=32, 722.7pt x 289.08pt>
-File: images/sing_value_to_energy.pdf Graphic file (type pdf)
-<use images/sing_value_to_energy.pdf>
-Package pdftex.def Info: images/sing_value_to_energy.pdf  used on input line 22
-3.
-(pdftex.def)             Requested size: 455.24411pt x 182.0993pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+[2 <./images/itema.pdf>]
 
-[7]
-<images/mse_snr_com_ruido.pdf, id=37, 462.52798pt x 346.89601pt>
-File: images/mse_snr_com_ruido.pdf Graphic file (type pdf)
-<use images/mse_snr_com_ruido.pdf>
-Package pdftex.def Info: images/mse_snr_com_ruido.pdf  used on input line 232.
-(pdftex.def)             Requested size: 409.71692pt x 307.30202pt.
+[3 <./images/itemb.pdf>]
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/noisy_recon_J.pdf, id=38, 4351.25626pt x 3001.2125pt>
-File: images/noisy_recon_J.pdf Graphic file (type pdf)
-<use images/noisy_recon_J.pdf>
-Package pdftex.def Info: images/noisy_recon_J.pdf  used on input line 241.
-(pdftex.def)             Requested size: 318.66948pt x 219.76903pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[8 <./images/recon_J.pdf> <./images/sing_value_to_energy.pdf>]
-
-LaTeX Warning: Text page 9 contains only floats.
-
-
-
-[9 <./images/mse_snr_com_ruido.pdf> <./images/noisy_recon_J.pdf>]
-Overfull \hbox (19.96072pt too wide) in paragraph at lines 255--256
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[10]
-Overfull \hbox (41.56094pt too wide) in paragraph at lines 284--286
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.76065pt too wide) in paragraph at lines 290--291
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.76065pt too wide) in paragraph at lines 298--301
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (48.76102pt too wide) in paragraph at lines 303--304
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[11]
-Overfull \hbox (91.96146pt too wide) in paragraph at lines 316--317
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (142.36197pt too wide) in paragraph at lines 317--320
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[12]
-Overfull \hbox (12.15138pt too wide) in paragraph at lines 337--338
-[]\OT1/ptm/m/n/12 O de-sem-pe-nho ideal []e alcan[]ado quando a classifica[][]a
-o es-ti-mada cor-res-ponde []a classifica[][]ao
- []
-
-<images/ALS_rank_estimation_cropped.pdf, id=132, 518.44693pt x 348.5823pt>
-File: images/ALS_rank_estimation_cropped.pdf Graphic file (type pdf)
-<use images/ALS_rank_estimation_cropped.pdf>
-Package pdftex.def Info: images/ALS_rank_estimation_cropped.pdf  used on input 
-line 345.
-(pdftex.def)             Requested size: 409.71692pt x 275.47806pt.
-
-
-[13 <./images/ALS_rank_estimation_cropped.pdf>]
-Overfull \hbox (91.96146pt too wide) in paragraph at lines 373--374
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[14]
-Overfull \hbox (34.36087pt too wide) in paragraph at lines 383--384
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-LaTeX Font Info:    Trying to load font information for OML+ptm on input line 3
-88.
-(c:/texlive/2025/texmf-dist/tex/latex/psnfss/omlptm.fd
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 388.
-
-Overfull \hbox (19.96072pt too wide) in paragraph at lines 393--395
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (142.36197pt too wide) in paragraph at lines 396--397
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (113.56168pt too wide) in paragraph at lines 399--401
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (91.96146pt too wide) in paragraph at lines 405--406
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-
-[15] (./main.aux)
+[4] (./main2.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 6624 strings out of 467886
- 103197 string characters out of 5438218
- 556869 words of memory out of 5000000
- 35097 multiletter control sequences out of 15000+600000
- 647048 words of font info for 82 fonts, out of 8000000 for 9000
+ 6275 strings out of 467886
+ 99219 string characters out of 5438218
+ 522819 words of memory out of 5000000
+ 34759 multiletter control sequences out of 15000+600000
+ 643390 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,68p,759b,1717s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,12n,68p,374b,306s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
-live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/t
-ype1/urw/symbol/usyr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive
-/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 3983375 bytes).
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dis
+t/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/t
+imes/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c
+:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main2.pdf (4 pages, 140132 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
