@@ -34,15 +34,15 @@ def fold(tensor_unfolding, tensor_shape, n):
 
     return tensor
 
-def ten_mat_prod(tensor,matrix,mode):
+
+def ten_mat_prod(tensor, matrix, n):
     
     shape = list(tensor.shape)
-    shape.pop(mode)
-    shape.insert(mode,matrix.shape[0])
-    
-    tensor = matrix@unfold(tensor,mode)
-    tensor = fold(tensor,shape,mode)
-    
+    shape[n-1] = matrix.shape[0]
+
+    tensor = matrix@ unfold(tensor,n)
+    tensor = fold(tensor, shape, n)
+
     return tensor
 
 def ten_mat_multiprod(tensor,list_of_matrices):
