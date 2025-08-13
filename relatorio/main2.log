@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.12)  11 AUG 2025 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.12)  12 AUG 2025 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./main2.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
-(./preamble.tex (c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
+(c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (c:/texlive/2025/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
@@ -284,11 +284,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \@temptokenb=\toks30
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-9.
+8.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-))
+)
 (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
@@ -303,20 +303,20 @@ LaTeX Warning: Label `fig:placeholder' multiply defined.
 )
 \openout1 = `main2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -378,10 +378,10 @@ e
 <./images/ufc.png, id=1, 124.96687pt x 152.82094pt>
 File: ./images/ufc.png Graphic file (type png)
 <use ./images/ufc.png>
-Package pdftex.def Info: ./images/ufc.png  used on input line 12.
+Package pdftex.def Info: ./images/ufc.png  used on input line 92.
 (pdftex.def)             Requested size: 56.23457pt x 68.76877pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-0.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+10.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -393,44 +393,44 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/
 texmf-dist/fonts/enc/dvips/base/8r.enc} <./images/ufc.png>]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 42.
+ 122.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 42.
+ 122.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 42.
+ 122.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 42.
+ 122.
 
 (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 <./images/itema.pdf, id=10, 722.6744pt x 433.03671pt>
 File: ./images/itema.pdf Graphic file (type pdf)
 <use ./images/itema.pdf>
-Package pdftex.def Info: ./images/itema.pdf  used on input line 50.
+Package pdftex.def Info: ./images/itema.pdf  used on input line 130.
 (pdftex.def)             Requested size: 409.71692pt x 245.51196pt.
 <./images/itemb.pdf, id=11, 722.6744pt x 433.03671pt>
 File: ./images/itemb.pdf Graphic file (type pdf)
 <use ./images/itemb.pdf>
-Package pdftex.def Info: ./images/itemb.pdf  used on input line 59.
+Package pdftex.def Info: ./images/itemb.pdf  used on input line 139.
 (pdftex.def)             Requested size: 409.71692pt x 245.51196pt.
 
 
@@ -439,10 +439,399 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [2 <./images/itema.pdf>]
+Overfull \hbox (63.16116pt too wide) in paragraph at lines 156--158
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
 
 [3 <./images/itemb.pdf>]
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
+77.
+ (c:/texlive/2025/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
 
-[4] (./main2.aux)
+Overfull \hbox (113.56168pt too wide) in paragraph at lines 195--196
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[4]
+Overfull \hbox (77.56131pt too wide) in paragraph at lines 200--201
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (55.96109pt too wide) in paragraph at lines 208--209
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OML+ptm on input line 2
+26.
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 226.
+
+
+[5]
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 250--251
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 251--253
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.3616pt too wide) in paragraph at lines 254--255
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (106.3616pt too wide) in paragraph at lines 255--256
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (91.96146pt too wide) in paragraph at lines 258--259
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[6]
+
+[7]
+<images/comparativo_operacoes.pdf, id=141, 987.20822pt x 479.15009pt>
+File: images/comparativo_operacoes.pdf Graphic file (type pdf)
+<use images/comparativo_operacoes.pdf>
+Package pdftex.def Info: images/comparativo_operacoes.pdf  used on input line 3
+26.
+(pdftex.def)             Requested size: 409.71692pt x 198.8582pt.
+
+Overfull \hbox (12.76065pt too wide) in paragraph at lines 340--341
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[8 <./images/comparativo_operacoes.pdf>]
+Overfull \hbox (19.96072pt too wide) in paragraph at lines 349--350
+[][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (243.163pt too wide) in paragraph at lines 366--368
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[9]
+Overfull \hbox (34.36087pt too wide) in paragraph at lines 379--380
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.36087pt too wide) in paragraph at lines 388--389
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.36087pt too wide) in paragraph at lines 389--391
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[10]
+Overfull \hbox (19.96072pt too wide) in paragraph at lines 404--405
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.56058pt too wide) in paragraph at lines 411--412
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 423--424
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (12.76065pt too wide) in paragraph at lines 424--425
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (55.96109pt too wide) in paragraph at lines 432--433
+[][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[11]
+Overfull \hbox (63.16116pt too wide) in paragraph at lines 442--443
+[][][][][][][][][][][][][][][][][] 
+ []
+
+<images/3met_r2.pdf, id=199, 987.20822pt x 479.15009pt>
+File: images/3met_r2.pdf Graphic file (type pdf)
+<use images/3met_r2.pdf>
+Package pdftex.def Info: images/3met_r2.pdf  used on input line 468.
+(pdftex.def)             Requested size: 455.24411pt x 220.96005pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/3met_r4.pdf, id=200, 987.20822pt x 479.15009pt>
+File: images/3met_r4.pdf Graphic file (type pdf)
+<use images/3met_r4.pdf>
+Package pdftex.def Info: images/3met_r4.pdf  used on input line 475.
+(pdftex.def)             Requested size: 455.24411pt x 220.96005pt.
+
+
+[12]
+Overfull \hbox (27.1608pt too wide) in paragraph at lines 492--493
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 498--499
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[13 <./images/3met_r2.pdf>]
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 508--509
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[14 <./images/3met_r4.pdf>]
+Overfull \hbox (41.56094pt too wide) in paragraph at lines 536--537
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.16153pt too wide) in paragraph at lines 542--543
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (41.56094pt too wide) in paragraph at lines 547--548
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[15]
+<images/chained.pdf, id=320, 722.7pt x 433.62pt>
+File: images/chained.pdf Graphic file (type pdf)
+<use images/chained.pdf>
+Package pdftex.def Info: images/chained.pdf  used on input line 560.
+(pdftex.def)             Requested size: 455.24411pt x 273.14896pt.
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.573 ...rror("Matrizes devem ter o mesmo número 
+                                                  de colunas.")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "BA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.573 ...rror("Matrizes devem ter o mesmo número 
+                                                  de colunas.")
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Overfull \hbox (135.1619pt too wide) in paragraph at lines 573--575
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[16 <./images/chained.pdf>]
+Overfull \hbox (27.1608pt too wide) in paragraph at lines 575--576
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.581 ...m retirados devido ao tempo de execução
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "A7.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.581 ...m retirados devido ao tempo de execução
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.581 ...m retirados devido ao tempo de execução
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "A3.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.581 ...m retirados devido ao tempo de execução
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Overfull \hbox (300.76358pt too wide) in paragraph at lines 581--582
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 591--592
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[17]
+Overfull \hbox (41.56094pt too wide) in paragraph at lines 619--620
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (99.16153pt too wide) in paragraph at lines 625--626
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (185.56241pt too wide) in paragraph at lines 626--627
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (149.56204pt too wide) in paragraph at lines 627--628
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 ....title('Comparativos entre os 3 métodos 
+                                                  para R=4')
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "A9.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.628 ....title('Comparativos entre os 3 métodos 
+                                                  para R=4')
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Overfull \hbox (48.76102pt too wide) in paragraph at lines 628--629
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[18]
+Overfull \hbox (70.36124pt too wide) in paragraph at lines 657--658
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (135.1619pt too wide) in paragraph at lines 660--661
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.96072pt too wide) in paragraph at lines 662--663
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[19]
+
+[20] (./main2.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
@@ -453,23 +842,24 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6275 strings out of 467886
- 99219 string characters out of 5438218
- 522819 words of memory out of 5000000
- 34759 multiletter control sequences out of 15000+600000
- 643390 words of font info for 74 fonts, out of 8000000 for 9000
+ 6610 strings out of 467886
+ 102862 string characters out of 5438218
+ 560899 words of memory out of 5000000
+ 35090 multiletter control sequences out of 15000+600000
+ 643748 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,68p,374b,306s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,65p,374b,1721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
-live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dis
-t/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/t
-imes/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c
-:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main2.pdf (4 pages, 140132 bytes).
+live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/t
+ype1/urw/symbol/usyr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive
+/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main2.pdf (20 pages, 234377 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 418 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
